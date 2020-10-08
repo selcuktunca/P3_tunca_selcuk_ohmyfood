@@ -1,0 +1,22 @@
+ 
+
+*{
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    display: flex;
+    justify-content: center;
+}
+header img{
+    width: 200px;
+    height: 50px;
+}
+.Localisation i{
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    padding-top: 15px;
+}
