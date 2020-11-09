@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+img {
+    max-width: 100%;
+  }
+main {
+      max-width: 98%;
+      box-shadow: 0 0 15px black;
+  }
+.logo-titre{
+  max-width: 200px;
+  padding-top: 10px;
+}
+.Localisation{
+  text-align: center;
+  background-color: #d3d3d3;
+  padding: 5px 0 5px 0;
+  
+}
+.Localisation i::before{
+  padding-right: 5px;
+}
+
+.Reservation{
+  text-align: center;
+  background-color: rgb(238, 235, 235);
+}
+.Button-violet{
+  border: none;
+  border-radius: 50% 50%;
+  background: linear-gradient(175deg, #FF79DA, #9356DC);
+  color: white;
+}
+.Reservation ,h2 ,p ,button{
+  padding: 10px 0 10px 0;
+}
+.Fonctionnement{
+  text-align: center;
+}
+.Fonctionnement li{
+  padding: 8px 0 8px 0;
+}
+.Button-grey{
+  box-shadow: 0 0 5px black;
+  border: none;
+  border-radius: 25%;
+  width: 250px;
+  background-color: rgb(238, 235, 235);
+}
+.Fonctionnement i::before{
+  padding-right: 10px;
+}
+
+.Restaurants {
+  background-color: rgb(238, 235, 235);
+
+}
+.Restaurants h2{
+  padding: 30px 0 0 20px;
+}
+
+.Restaurants img{
+  border-radius: 15% 15% 0 0;
+  max-height: 200px;
+  width: 100%;
+}
+ 
+.Restaurants figure{
+  padding-bottom: 30px;
+  background-color: rgb(238, 235, 235) ;
+  max-width: 90%;
+  padding: 10px 20px 10px 20px;
+}
+.Restaurants figcaption{
+  background-color: white;
+  border-bottom-left-radius: 15px 15px;
+  border-bottom-right-radius: 15px 15px;
+
+}
+
+.Restaurants figcaption i {
+  float: right;
+  padding-right: 5px;
+}
+
+.Contact{
+  width: 100%;
+  background-color: rgb(56, 52, 52);
+}
+.Contact footer{
+  padding: 25px 0 10px 20px;
+  color: white;
+}
+.Contact i::before{
+  padding-right: 10px;
+}
+.Contact img{
+  height: 15px;
+  width: 100px;
+  padding-bottom: 10px;
+}
+
+
+
