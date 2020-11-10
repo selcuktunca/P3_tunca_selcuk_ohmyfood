@@ -4,10 +4,7 @@
 }
 body {
     max-width: 480px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex;
   }
   
 img {
@@ -16,6 +13,7 @@ img {
 main {
       max-width: 98%;
       box-shadow: 0 0 15px black;
+      font-family:'Roboto', sans-serif;
   }
 .logo-titre{
   max-width: 200px;
@@ -36,14 +34,14 @@ main {
   background-color: rgb(238, 235, 235);
 }
 .Button-violet{
-  border: none;
-  border-radius: 50% 50%;
   background: linear-gradient(175deg, #FF79DA, #9356DC);
   color: white;
+  @include border-button;
 }
 .Reservation ,h2 ,p ,button{
   padding: 10px 0 10px 0;
 }
+
 .Fonctionnement{
   text-align: center;
 }
@@ -52,11 +50,11 @@ main {
 }
 .Button-grey{
   box-shadow: 0 0 5px black;
-  border: none;
-  border-radius: 25%;
   width: 250px;
   background-color: rgb(238, 235, 235);
+  @include border-button;
 }
+
 .Fonctionnement i::before{
   padding-right: 10px;
 }
@@ -65,9 +63,7 @@ main {
   background-color: rgb(238, 235, 235);
 
 }
-.Restaurants h2{
-  padding: 30px 0 0 20px;
-}
+
 
 .Restaurants img{
   border-radius: 15% 15% 0 0;
@@ -93,21 +89,70 @@ main {
   padding-right: 5px;
 }
 
-.Contact{
+footer{
   width: 100%;
   background-color: rgb(56, 52, 52);
-}
-.Contact footer{
   padding: 25px 0 10px 20px;
   color: white;
 }
-.Contact i::before{
+footer i::before{
   padding-right: 10px;
 }
-.Contact img{
+footer img{
   height: 15px;
   width: 100px;
   padding-bottom: 10px;
+}
+span{
+  text-decoration: underline $color-tertiaire;
+}
+
+article{
+  background-color:  rgb(238, 235, 235);
+  border-top-left-radius: 15px 15px;
+  border-top-right-radius: 15px 15px;
+  position:  relative;
+  top: -50px;
+}
+
+.Button-white{
+  width: 90%;
+  text-align: left;
+  background-color: white;
+  @include border-button;
+}
+
+article li{
+  padding-bottom: 10px;
+}
+.New{
+  position: relative;
+}
+.New::after{
+  content: 'Nouveau';
+  padding: 5px;
+  background-color: $color-tertiaire;
+  color: rgb(14, 146, 43);
+  position: absolute;
+  top: 30px;
+  right: 40px;
+}
+.H-shrikhand{
+  font-family: 'Shrikhand' , cursive;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 30px;
+}
+
+.Commandes button{
+  width: 150px;
+}
+.Commandes{
+  @include flex;
+  padding: 20px 0 30px 0;
+}
+ol {
+  padding: 20px 0 20px 0;
 }
 
 

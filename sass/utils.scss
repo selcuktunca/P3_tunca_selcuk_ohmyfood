@@ -1,3 +1,18 @@
 $color-primaire : #9356DC;
 $color-secondaire : #FF79DA;
 $color-tertiaire : #99E2D0;
+
+@mixin flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin border-button{
+    border: none;
+    border-top-left-radius: 15px 15px;
+    border-top-right-radius: 15px 15px;
+    border-bottom-left-radius: 15px 15px;
+    border-bottom-right-radius: 15px 15px;
+}
