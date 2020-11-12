@@ -14,6 +14,7 @@ main {
       max-width: 98%;
       box-shadow: 0 0 15px black;
       font-family:'Roboto', sans-serif;
+      background-color: rgb(238, 235, 235);
   }
 .logo-titre{
   max-width: 200px;
@@ -59,12 +60,6 @@ main {
   padding-right: 10px;
 }
 
-.Restaurants {
-  background-color: rgb(238, 235, 235);
-
-}
-
-
 .Restaurants img{
   border-radius: 15% 15% 0 0;
   max-height: 200px;
@@ -87,10 +82,12 @@ main {
 .Restaurants figcaption i {
   float: right;
   padding-right: 5px;
+  
 }
 
+
 footer{
-  width: 100%;
+  width: 98%;
   background-color: rgb(56, 52, 52);
   padding: 25px 0 10px 20px;
   color: white;
@@ -98,11 +95,7 @@ footer{
 footer i::before{
   padding-right: 10px;
 }
-footer img{
-  height: 15px;
-  width: 100px;
-  padding-bottom: 10px;
-}
+
 span{
   text-decoration: underline $color-tertiaire;
 }
@@ -120,6 +113,8 @@ article{
   text-align: left;
   background-color: white;
   @include border-button;
+  display: block;
+  margin: auto;
 }
 
 article li{
@@ -154,6 +149,12 @@ article li{
 ol {
   padding: 20px 0 20px 0;
 }
+a{
+  text-decoration: none;
+  color: black;
+}
+
+
 
 
 
