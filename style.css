@@ -114,8 +114,13 @@ footer i::before {
   padding-right: 10px;
 }
 
-span {
+.Span-underline {
   text-decoration: underline #99E2D0;
+}
+
+.Span-prix {
+  float: right;
+  padding-right: 10px;
 }
 
 article {

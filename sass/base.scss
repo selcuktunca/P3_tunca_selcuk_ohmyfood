@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
 }
+
 body {
     max-width: 480px;
     @include flex;
@@ -10,22 +11,26 @@ body {
 img {
     max-width: 100%;
   }
-main {
+
+  main {
       max-width: 98%;
       box-shadow: 0 0 15px black;
       font-family:'Roboto', sans-serif;
       background-color: rgb(238, 235, 235);
   }
-.logo-titre{
+
+  .logo-titre{
   max-width: 200px;
   padding-top: 10px;
 }
+
 .Localisation{
   text-align: center;
   background-color: #d3d3d3;
   padding: 5px 0 5px 0;
   
 }
+
 .Localisation i::before{
   padding-right: 5px;
 }
@@ -34,11 +39,13 @@ main {
   text-align: center;
   background-color: rgb(238, 235, 235);
 }
+
 .Button-violet{
   background: linear-gradient(175deg, #FF79DA, #9356DC);
   color: white;
   @include border-button;
 }
+
 .Reservation ,h2 ,p ,button{
   padding: 10px 0 10px 0;
 }
@@ -46,9 +53,11 @@ main {
 .Fonctionnement{
   text-align: center;
 }
+
 .Fonctionnement li{
   padding: 8px 0 8px 0;
 }
+
 .Button-grey{
   box-shadow: 0 0 5px black;
   width: 250px;
@@ -72,6 +81,7 @@ main {
   max-width: 90%;
   padding: 10px 20px 10px 20px;
 }
+
 .Restaurants figcaption{
   background-color: white;
   border-bottom-left-radius: 15px 15px;
@@ -92,12 +102,17 @@ footer{
   padding: 25px 0 10px 20px;
   color: white;
 }
+
 footer i::before{
   padding-right: 10px;
 }
 
-span{
+.Span-underline{
   text-decoration: underline $color-tertiaire;
+}
+.Span-prix{
+  float: right;
+  padding-right: 10px;
 }
 
 article{
@@ -120,9 +135,11 @@ article{
 article li{
   padding-bottom: 10px;
 }
+
 .New{
   position: relative;
 }
+
 .New::after{
   content: 'Nouveau';
   padding: 5px;
@@ -132,6 +149,7 @@ article li{
   top: 30px;
   right: 40px;
 }
+
 .H-shrikhand{
   font-family: 'Shrikhand' , cursive;
   display: flex;
@@ -142,6 +160,7 @@ article li{
 .Commandes button{
   width: 150px;
 }
+
 .Commandes{
   @include flex;
   padding: 20px 0 30px 0;
@@ -149,6 +168,7 @@ article li{
 ol {
   padding: 20px 0 20px 0;
 }
+
 a{
   text-decoration: none;
   color: black;
