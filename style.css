@@ -23,8 +23,9 @@ main {
 }
 
 .logo-titre {
-  max-width: 200px;
+  max-width: 150px;
   padding-top: 10px;
+  margin: auto;
 }
 
 .Localisation {
@@ -73,6 +74,23 @@ main {
   border-top-right-radius: 15px 15px;
   border-bottom-left-radius: 15px 15px;
   border-bottom-right-radius: 15px 15px;
+  position: relative;
+}
+
+.Span-number {
+  position: absolute;
+  left: -7px;
+  top: 10px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  color: white;
+  font-size: 0.8em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .Fonctionnement i::before {
@@ -106,7 +124,7 @@ main {
 footer {
   width: 98%;
   background-color: #383434;
-  padding: 25px 0 10px 20px;
+  padding: 25px 0 10px 2%;
   color: white;
 }
 
@@ -116,11 +134,6 @@ footer i::before {
 
 .Span-underline {
   text-decoration: underline #99E2D0;
-}
-
-.Span-prix {
-  float: right;
-  padding-right: 10px;
 }
 
 article {
@@ -142,6 +155,13 @@ article {
   border-bottom-right-radius: 15px 15px;
   display: block;
   margin: auto;
+  font: 400 13.3333px Arial;
+  margin-bottom: 10px;
+}
+
+.Span-prix {
+  float: right;
+  padding-right: 5px;
 }
 
 article li {
@@ -188,6 +208,36 @@ ol {
 a {
   text-decoration: none;
   color: black;
+}
+
+.Main-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.Button-white p {
+  width: 100%;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  color: black;
+  justify-content: space-between;
+}
+
+.Ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.Button-white h4 {
+  padding-top: 10px;
+}
+
+h2 i {
+  font-weight: unset;
 }
 
 /*# sourceMappingURL=style.css.map */
