@@ -1,3 +1,13 @@
+@keyframes Menu-anim {
+  0% {
+    transform: scaleY(0);
+    opacity: 0.1;
+  }
+  100% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
 * {
   padding: 0;
   margin: 0;
@@ -153,15 +163,11 @@ article {
   border-top-right-radius: 15px 15px;
   border-bottom-left-radius: 15px 15px;
   border-bottom-right-radius: 15px 15px;
-  display: block;
+  display: flex;
+  justify-content: space-between;
   margin: auto;
   font: 400 13.3333px Arial;
   margin-bottom: 10px;
-}
-
-.Span-prix {
-  float: right;
-  padding-right: 5px;
 }
 
 article li {
@@ -203,6 +209,8 @@ article li {
 
 ol {
   padding: 20px 0 20px 0;
+  animation: Menu-anim 3000ms 500ms;
+  transform-origin: 50% top;
 }
 
 a {
@@ -219,11 +227,9 @@ a {
 
 .Button-white p {
   width: 100%;
-  display: flex;
   margin: 0;
   padding: 0;
   color: black;
-  justify-content: space-between;
 }
 
 .Ellipsis {
@@ -238,6 +244,27 @@ a {
 
 h2 i {
   font-weight: unset;
+}
+
+.Prix {
+  display: flex;
+  align-self: flex-end;
+}
+
+.Valid-menu {
+  display: flex;
+  align-self: center;
+  background-color: green;
+  color: white;
+}
+
+.Valid-menu i {
+  width: 100%;
+  height: 100%;
+}
+
+.Nom-plat {
+  max-width: 200px;
 }
 
 /*# sourceMappingURL=style.css.map */
