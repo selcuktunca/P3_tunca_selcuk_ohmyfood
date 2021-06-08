@@ -47,7 +47,7 @@ img {
   @include border-button;
 }
 
-.Reservation ,h2 ,p ,button{
+.Reservation ,h2 {
   padding: 10px 0 10px 0;
 }
 
@@ -149,9 +149,27 @@ article{
   margin: auto;
   font: 400 13.3333px Arial;
   margin-bottom: 10px;
+  align-items: center;
+  overflow: hidden;
+    
+    &:hover .Valid-menu {
+      
+      animation: Anim-valid 1000ms 250ms ease-in-out forwards ;
+      }
 
+    &:hover .Valid-menu i{
+      transform: rotate(0deg);
+    }
   
+
 }
+
+.Valid-menu i{
+  transform: rotate(-360deg);
+  transition: transform 1000ms 250ms ease-in-out;
+}
+  
+
 
 
 
@@ -211,6 +229,8 @@ a{
   margin: 0;
   padding: 0;
   color: black;
+  display: flex;
+  justify-content: space-between;
   
 
 }
@@ -223,39 +243,26 @@ a{
   overflow: hidden;
 }
 
-.Button-white h4{
 
-  padding-top: 10px;
-
-}
 
 
 h2 i{
   font-weight: unset;
 }
 
-.Prix{
-  
-  display: flex;
-  align-self: flex-end;
-}
 
 .Valid-menu {
   display: flex;
-  align-self: center;
-  background-color: green;
+  justify-content: center;
   color: white;
-  
+  align-items: center;
+  height: 50px;
+  opacity: 0;
+  background-color: rgb(91, 194, 91);
 }
 
-.Valid-menu i{
-  width: 100%;
-  height: 100%;
-}
 .Nom-plat{
- 
-  max-width: 200px;
+  flex-grow: 1;
+  padding: 0 10px;
 
 }
-
-
