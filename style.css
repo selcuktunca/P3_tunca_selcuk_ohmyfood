@@ -18,6 +18,32 @@
     width: 50px;
   }
 }
+@keyframes Charge {
+  0% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(720deg);
+    opacity: 1;
+  }
+}
+@keyframes Anim-body {
+  0% {
+    opacity: O;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes Anim-loader {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 * {
   padding: 0;
   margin: 0;
@@ -99,6 +125,11 @@ main {
   border-bottom-left-radius: 15px 15px;
   border-bottom-right-radius: 15px 15px;
   position: relative;
+  opacity: 1;
+}
+.Button-grey:hover {
+  box-shadow: 0 0 10px black;
+  opacity: 0.8;
 }
 
 .Span-number {
@@ -145,6 +176,42 @@ main {
   padding-right: 5px;
 }
 
+/*.Coeur{
+  margin: auto;
+  position: relative
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  transform: rotate(45deg);
+    &::before{
+      content: "";
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -o-border-radius: 50%;
+      position: absolute;
+      bottom: O;
+      left: -10px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: red;
+
+    }
+    &::after{
+      content: "";
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -o-border-radius: 50%;
+      position: absolute;
+      top: -10px;
+      right: 0;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color:red;
+
+    }
+}*/
 footer {
   width: 98%;
   background-color: #383434;
@@ -236,7 +303,7 @@ article li {
   padding: 20px 0 30px 0;
 }
 
-ol {
+.Menu ol {
   padding: 20px 0 20px 0;
   animation: Menu-anim 3000ms 500ms;
   transform-origin: 50% top;
@@ -256,6 +323,7 @@ a {
 
 .Button-white p {
   width: 100%;
+  font-size: 12px;
   margin: 0;
   padding: 0;
   color: black;
@@ -286,6 +354,35 @@ h2 i {
 .Nom-plat {
   flex-grow: 1;
   padding: 0 10px;
+}
+
+.Nom-plat h4 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+footer p a {
+  color: white;
+}
+
+.Loader {
+  margin: auto;
+  position: absolute;
+  bottom: 300px;
+  border: 16px solid grey;
+  width: 150px;
+  height: 150px;
+  border-top-color: green;
+  border-bottom-color: red;
+  border-radius: 50%;
+  opacity: 0;
+  animation: Charge 3s backwards;
+}
+
+.Chargement {
+  opacity: 0;
+  animation: Anim-loader 2000ms 3000ms forwards;
 }
 
 @media screen and (min-width: 768px) {
