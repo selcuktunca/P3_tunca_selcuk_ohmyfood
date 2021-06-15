@@ -56,14 +56,8 @@ $color-tertiaire : #99E2D0;
     }
 
 }
-@keyframes Anim-body{
-    0%{
-        opacity: O;
-    }
-    100%{
-        opacity: 1;
-    }
-}
+
+
 @keyframes Anim-loader{
     0%{
         opacity: 0;
@@ -72,5 +66,16 @@ $color-tertiaire : #99E2D0;
     100%{
         opacity: 1
         
+    }
+}
+@keyframes Anim-heart{
+    0%{
+        
+    }
+ 
+    
+    100%{
+        color: red;
+        font-weight: 600;
     }
 }
