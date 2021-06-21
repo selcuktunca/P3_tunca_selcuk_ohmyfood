@@ -129,7 +129,7 @@ ol{
   float: right;
   padding-right: 5px;
     &:hover{
-      animation: Anim-heart 3s ease-in-out forwards;
+      animation: Anim-heart 2s ease-in-out forwards;
     }
     
 }
@@ -163,6 +163,7 @@ article{
 
 .Button-white{
   width: 90%;
+  height: 50px;
   text-align: left;
   background-color: white;
   @include border-button;
@@ -261,6 +262,9 @@ a{
   overflow: hidden;
 }
 
+.Button-white:hover .Nom-plat{
+  width: 70%;
+}
 
 
 
@@ -277,11 +281,13 @@ h2 i{
   height: 50px;
   opacity: 0;
   background-color: rgb(91, 194, 91);
+  width: 0;
 }
 
 .Nom-plat{
   flex-grow: 1;
   padding: 0 10px;
+  width: 95%;
 }
 
 footer p a{
@@ -307,6 +313,10 @@ footer p a{
       animation: Anim-loader 2000ms 3000ms forwards;
 }
 
+.Button-white h4{
+  width: 95%;
+  display: flex;
+}
 
 
 @media screen and (min-width: 768px){
@@ -318,6 +328,8 @@ footer p a{
   main{
     width: 90%;
   }
+  
+  
   footer{
     display: flex;
     flex-direction: row;
@@ -339,9 +351,21 @@ footer p a{
   }
   .Img-restaurant img{
     height: 400px;
-    width: 691px;
+    width: 100%;
+    image-rendering: pixelated;
   }
+  .Button-white{
+    width: 350px;
+  
+  }
+  .Menu h3{
+    display: flex;
+    justify-content: center;
+  }
+
+  
 }
+
 @media screen and (min-width: 1024px){
 
   
@@ -349,10 +373,8 @@ footer p a{
     width: 200px;
     height: 150px;
   }
-  .Img-restaurant img{
-    height: 400px;
-    width: 1296px;
-  }
+  
+  
 
 
 }
