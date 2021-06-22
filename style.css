@@ -178,7 +178,7 @@ ol {
   padding-right: 5px;
 }
 .Restaurants figcaption i:hover {
-  animation: Anim-heart 3s ease-in-out forwards;
+  animation: Anim-heart 2s ease-in-out forwards;
 }
 
 footer {
@@ -408,9 +408,26 @@ footer p a {
   }
 }
 @media screen and (min-width: 1024px) {
+  Main {
+    width: 99%;
+  }
+
   .Restaurants img {
     width: 200px;
     height: 150px;
+  }
+
+  .Button-white {
+    width: 250px;
+  }
+
+  .Menu ol {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .Button-white p {
+    font-size: 11px;
   }
 }
 
